@@ -1,9 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&family=Viga&display=swap');
+
 #content {
     max-width: 1600px;
     margin: 0 auto;
 }
 body {
     background-color: #8ebbd856;
+    font-family: Viga, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
 }
 header {
     background-color: #113e1179;
@@ -12,16 +18,21 @@ nav a {
     text-align: center;
     color: #5090a9b0;
     text-decoration: none;
+    padding: 50px;
 } 
 nav a:hover {
     text-align: center;
     background-color: #c89f37;
     color:#7d1743;
+    padding: 35px;
     
 } 
 #hero-msg h1 {
     text-align: center;
 } 
+h2 {
+    margin: 0;
+}
 #hero-msg h4 {
     text-align: center;
 } 
@@ -30,6 +41,9 @@ nav a:hover {
 } main section {
     text-align: center;
 } 
+main section img {
+    box-sizing: border-box;
+}
 section {
     text-align: center;    
 }
@@ -39,34 +53,51 @@ section {
     background-color:rgb(28, 118, 96);
 }
 
-.book, .join {
+.book, 
+.join {
     background-color:#bc8f1d;
     color:aliceblue;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
-.book:hover, .join:hover {
+.book:hover, 
+.join:hover {
     background-color:rgb(125, 85, 102);
 }
 
 .msg {
     background-color:rgb(219, 219, 219);
+    font-family: Ubuntu, Grenze, Display;
+    line-height: 1.5em;
+    padding: 35px;
 }
 
 footer {
     background-color: rgb(103, 39, 37);
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 
 .home-title {
     color:#2a2b8aa8;
+    font-family: Ubuntu, Gotisch, anybody, fantasy;
+    font-size: 2em;
+    margin-top: 10px
 }
 h4{
     color:#080807
 }
 .msg h2 {
     color:black;
+    font-family: Ubuntu, Copperplate, Papyrus, fantasy;
 }
 .msg p {
     color:black;
+    font-size: .8em;
+    padding-bottom: 15px;
 }
 footer h3 {
     color:rgb(86, 125, 48)
@@ -85,6 +116,7 @@ footer a:hover {
 
 .icon {
     width:80px;
+    padding-top: 10px;
 }
 
 #hero-img {
@@ -97,4 +129,21 @@ footer p {
 
 footer p a:hover {
     text-decoration: underline;
+}
+footer .social img {
+    padding-top: 15px;
+}
+
+.rivers-card,
+.camping-card,
+.rapids-card {
+    margin: 200px 0;
+}
+
+.card-img {
+    border: 10px solid #252b04;
+}
+
+.mountains {
+    margin: 200px 0;
 }
