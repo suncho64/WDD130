@@ -22,7 +22,7 @@ nav {
 }
 nav a {
     text-align: center;
-    color: #6fb4c2b0;
+    color: #03353fb0;
     text-decoration: none;
     padding: 50px;
 } 
@@ -46,6 +46,7 @@ nav a:hover {
 
 #hero-msg h1 {
     text-align: center;
+    color: rgb(14, 154, 105);
 }
 
 h2 {
