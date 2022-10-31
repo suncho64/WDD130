@@ -13,7 +13,6 @@ body {
 }
 header {
     background-color: #113e1179;
-    opacity: .6;
     display: grid;
     grid-template-columns: 150px auto;
 }
