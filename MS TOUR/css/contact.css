@@ -1,0 +1,377 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.navbar{
+	display: flex;
+	justify-content: space-between;
+	height: 12vh;
+	align-items:center ;
+	width: 80vw;
+	background: #003459;
+	margin: auto;
+	border-radius: 10px;
+	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+
+}
+.navbar img{
+	height: 94px;
+	position: relative;
+	top: 5px;
+	filter: invert(1);
+}
+.navbar-2 ul{
+    display: inline-block;
+}
+.navbar-2 ul li{
+   list-style: none;
+}
+.navbar-2 ul li a{
+	position: relative;
+   text-decoration: none;
+   padding: 29px 25px;
+   color: #fff;
+   font-size: 20px;
+   font-weight: 400;
+   transition: 0.5s;
+}
+.navbar-2 ul li a:hover{
+	color: #003459;
+	background: #396E94;
+}
+section{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: #003459;
+	margin: 15px 0;
+}
+.container{
+	position: relative;
+	min-width: 1100px;
+	min-height: 550px;
+	display: flex;
+	z-index: 1000;
+}
+.container .containerinfo{
+	position: absolute;
+	top: 40px;
+	width: 350px;
+	height: calc(100% - 80px);
+	background: #00171f;
+	z-index: 1;
+	padding: 40px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	justify-content: space-between;
+	box-shadow: 0 20px 25px rgba(0, 0, 0, 15);
+}
+.container .containerinfo h2{
+	color: #fff;
+	font-size: 24px;
+	font-weight: 500;
+	font-family: 'Viga', sans-serif;
+}
+.container .containerinfo ul.info{
+	position: relative;
+	margin: 20px 0 ;
+}
+.container .containerinfo ul.info li span:nth-child(1){
+	width: 30px;
+	min-width: 30px;
+}
+.container .containerinfo ul.info li span:nth-child(1) img{
+	max-width: 100%;
+	filter: invert(1);
+}
+.container .containerinfo ul.info li span:nth-child(2){
+	color: #007ea7;
+	margin-left: 10px;
+	font-weight: 300;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+.container .containerinfo ul.info li{
+	position: relative;
+	list-style: none;
+	display: flex;
+	margin: 20px 0;
+	cursor: pointer;
+	align-items: flex-start;
+}
+.container .containerform{
+	position: absolute;
+	padding: 70px 50px;
+	padding-left: 250px;
+	margin-left: 150px;
+	width: calc(100% - 150px);
+	height: 100%;
+	background: #fff;
+	box-shadow: 0 50px 50px rgba(0, 0, 0, 25);
+}
+.container .containerinfo ul.sci{
+	position: relative;
+	display: flex;
+}
+.container .containerinfo ul.sci li{
+	list-style: none;
+	margin-right: 15px;
+}
+.container .containerinfo ul.sci li a{
+	text-decoration: none;
+}
+.container .containerinfo ul.sci li a img{
+	filter: invert(1);
+}
+.container .containerform h2{
+    color: #0f3959;
+    font-size: 24px;
+    font-weight: 500;
+}
+.container .containerform .formbox{
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding-top: 30px;
+}
+.container .containerform .formbox .inputbox{
+	position: relative;
+	margin-bottom:35px ;
+}
+.container .containerform .formbox .inputbox.w50{
+	width: 47%;
+}
+.container .containerform .formbox .inputbox.w100{
+    width: 100%;
+}
+.container .containerform .formbox .inputbox textarea,
+.container .containerform .formbox .inputbox input{
+	width: 100%;
+	resize: none;
+	padding: 5px 0;
+	font-size: 18px;
+	font-weight: 300;
+	color: #333;
+	border: none;
+	outline: none;
+	border-bottom: 1px solid #003459;
+}
+.container .containerform .formbox .inputbox textarea{
+	height: 120px;
+}
+.container .containerform .formbox .inputbox span{
+	position: absolute;
+	left: 0;
+	padding: 5px 0;
+	pointer-events: none;
+	font-size: 18px;
+	font-weight: 300;
+	transition: 0.3s;
+}
+.container .containerform .formbox .inputbox textarea:focus ~ span,
+.container .containerform .formbox .inputbox input:focus ~ span,
+.container .containerform .formbox .inputbox textarea:valid ~ span,
+.container .containerform .formbox .inputbox input:valid ~ span{
+transform: translateY(-20px);
+font-size: 12px;
+font-weight: 400;
+letter-spacing: 1px;
+color: #003459;
+font-weight: 500;
+}
+.container .containerform .formbox .inputbox input[type="submit"]{
+	position: relative;
+	cursor: pointer;
+	background:  #003459;
+	border: none;
+	max-width: 150px;
+	padding: 12px;
+	color: #fff;
+	border-radius:5px ;
+}
+.container .containerform .formbox .inputbox input[type="submit"]:hover{
+	color: #003459;
+	background: #396E94;
+}
+.footer{
+	height: 12vh;
+	width: 98vw;
+	margin: auto;
+	background:#003459 ;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 20px;
+}
+.footer img{
+	height: 94px;
+	position: relative;
+	top: 5px;
+	filter: invert(1);
+}
+.footer-2 ul{
+    display: inline-block;
+}
+.footer-2 ul li{
+   list-style: none;
+}
+.footer-2 ul li a{
+	position: relative;
+   text-decoration: none;
+   padding: 29px 25px;
+   color: #fff;
+   font-size: 20px;
+   font-weight: 400;
+   margin-right: 15px;
+   transition: 0.5s;
+}
+.footer-2 ul li a:hover{
+	color: #003459;
+	background: #396E94;
+}
+.footer .navlogo{
+    display: flex;
+}
+.footer .navlogo .src{
+	display: flex;
+	align-items: center;
+}
+.footer .navlogo .src li{
+	list-style: none;
+	margin-left: 20px;
+	padding: 0 15px;
+	transition: 0.5s;
+	border-radius: 40%;
+}
+.footer .navlogo .src img{
+	height: 30px;
+}
+
+.footer .navlogo .src li:hover{
+	color: #003459;
+	background: #396E94;
+	border-radius: 40%;
+	transform: translateY(-10px);
+}
+@media (max-width : 1200px){
+	.container{
+		width: 90%;
+		min-width: auto;
+		margin: 20px;
+		box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+	}
+	.container .containerinfo{
+		top: 0;
+		height: 550px;
+		position: relative;
+		box-shadow: none;
+	}
+	.container .containerform{
+		position: relative;
+		width: calc(100% - 350px);
+		padding-left: 0px;
+		margin-left: 0px;
+        padding: 40px;
+        height: 550px;
+        box-shadow: none;
+	}
+}
+@media (max-width : 991px){
+	section{
+		background: #003459;
+	}
+	.container{
+		display: flex;
+		flex-direction: column-reverse;
+	}
+	.container .containerform{
+		width: 100%;
+		height: auto;
+	}
+	.container .containerinfo{
+		width: 100%;
+		height: auto;
+		flex-direction: row;
+	}
+	.container .containerinfo ul.sci{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+@media (max-width : 670px){
+	.navbar{
+		display: flex;
+		flex-direction:  column;
+		height: 22vh;
+	}
+    .navbar .navbar-2{
+    	position: relative;
+    	top: -20px;
+    }
+	.navbar .navbar-2 ul li a{
+		padding: 15px 20px;
+	}
+    .footer{
+    	height: 30vh;
+    	display: flex;
+    	flex-direction: column;
+    }
+    .footer .navlogo{
+    	display: flex;
+    	flex-direction: column;
+    }
+    .footer .navlogo img{
+    	width: 100px;
+    	position: relative;
+    	left: 36%;
+    }
+    .footer .navlogo .src img{
+    	width: 27px;
+    	height: 30px;
+    }
+    .footer-2 ul li a {
+    position: relative;
+    top: -19px;
+    left: 25%;
+    padding: 18px 8px;
+    }
+}
+@media (max-width : 600px){
+	.container .containerform{
+		padding: 25px;
+	}
+	.container .containerinfo{
+		padding: 25px;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.container .containerinfo ul.sci{
+		margin-top: 40px;
+	}
+	.container .containerform .formbox .inputbox.w50{
+		width: 100%;
+	}
+}
+@media (max-width : 420px){
+	.navbar .navbar-2 ul li a {
+    padding: 15px 11px;
+    font-size: 17px;
+   }
+}
+@media (max-width : 350px){
+   .footer .navlogo .src img {
+    width: 27px;
+    height: 30px;
+    margin: -17px;
+   }
+   .footer .navlogo img{
+   	width: 100px;
+    position: relative;
+    left: 19%;
+   }
+}

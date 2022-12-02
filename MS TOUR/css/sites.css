@@ -1,0 +1,239 @@
+*{
+	margin: 0;
+	padding: 0 ;
+	box-sizing: border-box;
+}
+.navbar{
+	display: flex;
+	justify-content: space-between;
+	height: 12vh;
+	align-items:center ;
+	width: 80vw;
+	background: #003459;
+	margin: auto;
+	border-radius: 10px;
+	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+.navbar img{
+	height: 94px;
+	position: relative;
+	top: 5px;
+	filter: invert(1);
+}
+.navbar-2 ul{
+    display: inline-block;
+}
+.navbar-2 ul li{
+   list-style: none;
+}
+.navbar-2 ul li a{
+	position: relative;
+   text-decoration: none;
+   padding: 29px 25px;
+   color: #fff;
+   font-size: 20px;
+   font-weight: 400;
+   transition: 0.5s;
+}
+.navbar-2 ul li a:hover{
+	color: #003459;
+	background: #396E94;
+}
+.container{
+	position: relative;
+	top: 15px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 98vw;
+	margin: auto;
+}
+.container h1{
+	font-size: 40px;
+	font-weight: 700;
+	font-family: 'Viga', sans-serif;
+	color:#007ea7 ;
+	border-bottom: 2px solid #007ea7 ;
+}
+.container .col{
+    display: flex;
+    color: #007ea7;
+    width: 90vw;
+    height: auto;
+    background: #00171f;
+    padding: 8px;
+    margin: 15px 0px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+.container .col img{
+	height: 200px;
+	padding: 12px;
+	background:#00171f ;
+}
+.container .col .col-2{
+	display: flex;
+	align-items: center;
+	flex-direction:column;
+	padding:12px;
+	margin: 10px;
+}
+.container .col .img{
+   width: 17vw;
+   height: 38vh;
+}
+.container .col h2{
+	font-size: 30px;
+	font-family: 'Viga', sans-serif;
+	border-bottom: 2px solid #007ea7;
+	position: relative;
+	top: -10px;
+}
+.container .col p{
+	font-family: 'Titillium Web', sans-serif;
+}
+.footer{
+	height: 12vh;
+	width: 98vw;
+	margin: auto;
+	background:#003459 ;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 20px;
+}
+.footer img{
+	height: 94px;
+	position: relative;
+	top: 5px;
+	filter: invert(1);
+}
+.footer-2 ul{
+    display: inline-block;
+}
+.footer-2 ul li{
+   list-style: none;
+}
+.footer-2 ul li a{
+	position: relative;
+   text-decoration: none;
+   padding: 29px 25px;
+   color: #fff;
+   font-size: 20px;
+   font-weight: 400;
+   margin-right: 15px;
+   transition: 0.5s;
+}
+.footer-2 ul li a:hover{
+	color: #003459;
+	background: #396E94;
+}
+.footer .navlogo{
+    display: flex;
+}
+.footer .navlogo .src{
+	display: flex;
+	align-items: center;
+}
+.footer .navlogo .src li{
+	list-style: none;
+	margin-left: 20px;
+	padding: 0 15px;
+	transition: 0.5s;
+	border-radius: 40%;
+}
+.footer .navlogo .src img{
+	height: 30px;
+}
+
+.footer .navlogo .src li:hover{
+	color: #003459;
+	background: #396E94;
+	border-radius: 40%;
+	transform: translateY(-10px);
+}
+
+@media (max-width : 1028px){
+	.container .col{
+		display: flex;
+		flex-direction: column;
+	} 
+	.container .col img {
+    height: 200px;
+    display: block;
+    margin: auto;
+    padding: 12px;
+    background: #00171f;
+    }
+}
+@media (max-width :670px){
+	.navbar{
+		display: flex;
+		flex-direction:  column;
+		height: 22vh;
+	}
+    .navbar .navbar-2{
+    	position: relative;
+    	top: -20px;
+    }
+	.navbar .navbar-2 ul li a{
+		padding: 15px 20px;
+	}
+    .footer{
+    	height: 30vh;
+    	display: flex;
+    	flex-direction: column;
+    }
+    .footer .navlogo{
+    	display: flex;
+    	flex-direction: column;
+    }
+    .footer .navlogo img{
+    	width: 100px;
+    	position: relative;
+    	left: 36%;
+    }
+    .footer .navlogo .src img{
+    	width: 27px;
+    	height: 30px;
+    }
+    .footer-2 ul li a {
+    position: relative;
+    top: -19px;
+    left: 25%;
+    padding: 18px 8px;
+    }
+}
+@media (max-width : 480px){
+     .container h1 {
+    font-size: 19px;
+   }
+   .container .col img {
+    height: 150px;
+   }
+   .container .col .img {
+    width: 50vw;
+    height: 50vh;
+   }
+}
+@media (max-width : 420px){
+	.navbar .navbar-2 ul li a{
+    padding: 15px 11px;
+    font-size: 17px;
+   }
+}
+@media (max-width : 350px){
+	.container .col img {
+    height: 100px;
+   }
+   .footer .navlogo .src img {
+    width: 27px;
+    height: 30px;
+    margin: -17px;
+   }
+   .footer .navlogo img{
+   	width: 100px;
+    position: relative;
+    left: 19%;
+   }
+}
